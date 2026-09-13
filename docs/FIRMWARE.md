@@ -111,7 +111,7 @@ CI attach-on-tag / signed images: later. SoftAP upload stays the reliable custom
 | Piece | Role |
 | --- | --- |
 | GitHub repo | Source |
-| GitHub Releases | `victronble-t-display-c5-vX.Y.Z.bin` + short notes |
+| GitHub Releases | `victron-instant-readout-t-display-c5-vX.Y.Z.bin` + short notes |
 | SoftAP upload | Field update |
 | USB-C | Factory / recovery / dev |
 
