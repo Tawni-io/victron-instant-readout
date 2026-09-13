@@ -87,6 +87,7 @@ SoftAP OTA writes the **inactive app slot only**.
 
 ### Hard don’ts (MVP)
 
+- Do **not** ship `build_type = debug` or `-ggdb2` for anything public (GitHub, SoftAP field `.bin`, factory flash)  
 - Do **not** add ArduinoOTA / always-on van Wi‑Fi / auto-download from GitHub  
 - Do **not** put Firmware on a separate SoftAP page or cabin edit form  
 - Do **not** set `WIPE_CONFIG_ON_NEW_FW=1` on field/release builds  
