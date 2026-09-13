@@ -259,7 +259,8 @@ void send_page(const char* flash_msg, bool flash_ok) {
       "<form method=POST action=/stop>"
       "<button class=danger type=submit>Stop hotspot</button>"
       "</form>"
-      "<p class=muted>Cabin shows SETUP MODE while hotspot is on. Up to 8 devices.</p>"));
+      "<p class=muted>Cabin shows SETUP MODE while hotspot is on. Up to 8 devices.</p>"
+      "<p class=muted>Tawni is not affiliated with Victron Energy.</p>"));
 
   send_flash_chunks(PSTR(
       "<script>"

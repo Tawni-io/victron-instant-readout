@@ -5,6 +5,8 @@ Cabin gauge for Victron kit. Same Tawni box, this firmware face.
 **Hardware:** [LILYGO T-Display C5](https://www.lilygo.cc/products/t-display-c5) (ESP32-C5, 1.9″ 320×170).  
 **Product:** [tawni.io](https://tawni.io)
 
+Tawni is **not affiliated with, endorsed by, or sponsored by Victron Energy B.V.** Victron, VictronConnect, and Instant Readout are trademarks of Victron Energy.
+
 Current version: **v0.3.8** — [changelog](CHANGELOG.md) · [releases](https://github.com/Tawni-io/victron-instant-readout/releases)
 
 ---
@@ -77,6 +79,8 @@ Saved devices stay after an update. Stay powered during upload.
 
 First boot with no devices: hotspot is already on. Cabin shows **SETUP MODE**.
 
+This face’s hotspot is **VictronDash**. Other Tawni faces use their own SSID so two boxes on the bench do not collide.
+
 1. Join **VictronDash** (open network) → `http://192.168.4.1`
 2. In VictronConnect: enable Instant Readout, copy **MAC** and **encryption key**
 3. SoftAP **Nearby** (or paste MAC) → Name → key → Type → **Save device**
@@ -119,6 +123,6 @@ Touch-IC gold test: `pio run -e bringup_touch -t upload`
 
 ## License
 
-Firmware: [MIT](LICENSE).
+Firmware: [MIT](LICENSE). Tawni is not affiliated with Victron Energy B.V.
 
 Vendored drivers keep their own licenses: [`lib/esp_lcd_st7789`](lib/esp_lcd_st7789) (LilyGO / João Brilha), [`lib/CST816S`](lib/CST816S) (Felix Biego).

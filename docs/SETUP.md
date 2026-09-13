@@ -2,6 +2,8 @@
 
 How a user adds Victron kit and which readings own the cabin **Battery** glance.
 
+Tawni is not affiliated with Victron Energy B.V.
+
 **Status:** Implemented in firmware — SoftAP multi-device list + NVS (up to 8), nearby `model_id` labels, automatic Battery source.
 
 Related: [DASHBOARD.md](DASHBOARD.md) · [COMPATIBILITY.md](COMPATIBILITY.md) · [INSTANT_READOUT.md](INSTANT_READOUT.md) · [FIRMWARE.md](FIRMWARE.md) · [VICTRONCONNECT_REF.md](VICTRONCONNECT_REF.md)
