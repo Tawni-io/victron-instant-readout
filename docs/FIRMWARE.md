@@ -70,7 +70,7 @@ Wipe logic: `src/config/device_config.cpp`. Intentional erase for users: SoftAP 
 
 | Do | Don’t |
 | --- | --- |
-| Ship / SoftAP-upload `.pio/build/bringup_ble/firmware.bin` | Upload a merged full-flash image (bootloader + partitions + app) |
+| Ship / SoftAP-upload `.pio/build/bringup_ble/firmware.bin` from **`build_type = release`** (no `-ggdb2`; `tools/pio_strip_host_paths.py` remaps `__FILE__`) | Upload a merged full-flash image; ship a `debug` / `-ggdb2` image (embeds `C:/Users/<name>/.platformio/…`) |
 | Rename for Releases: `victron-instant-readout-t-display-c5-vX.Y.Z.bin` (copy of that app `.bin`) | Use `bringup_lcd` / `bringup_touch` builds as cabin releases |
 
 SoftAP OTA writes the **inactive app slot only**.
@@ -96,7 +96,7 @@ SoftAP OTA writes the **inactive app slot only**.
 
 1. Bump `VICTRONDASH_VERSION` in `platformio.ini` + both `#ifndef` fallbacks (same value)  
 2. Add a short entry at the top of [CHANGELOG.md](../CHANGELOG.md)  
-3. `pio run -e bringup_ble` — confirm `.bin` fits an OTA slot (~6.25 MB max practical)  
+3. `pio run -e bringup_ble` — `build_type = release`; confirm `.bin` fits an OTA slot (~6.25 MB max practical) and does **not** contain `C:/Users/`  
 4. Smoke: USB flash → SoftAP OTA of the **same** app `.bin` → SoftAP / Info show new `v…` → **saved devices still present**  
 5. Optional: Factory reset once on a test config → SETUP MODE / empty list  
 6. Copy `firmware.bin` → `victron-instant-readout-t-display-c5-vX.Y.Z.bin` · tag + GitHub Release + short notes  

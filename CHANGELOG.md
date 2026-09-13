@@ -10,6 +10,7 @@ Newest first.
 - Auto soft-off when the board LiPo is discharging at **≤ 3.20 V** for ~4 s (before backlight fade / pack UVLO ~3.10 V)
 - USB charging stays awake so a flat cell can recover; cabin shows **BATTERY EMPTY** then the same deep-sleep path as dual-button
 - Info treats ≥ 2.50 V as a real cell (open protection still reads ~0 → `No LiPo`)
+- GitHub `.bin` is a PlatformIO **release** build (no `-ggdb2`); debug images embed the build-machine username in `__FILE__` paths
 
 ## 0.3.7
 
