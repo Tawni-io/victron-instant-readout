@@ -1,0 +1,36 @@
+# Instant Readout encryption keys — never commit
+include/victron_secrets.h
+
+# VictronConnect screenshots may contain MAC + keys
+pics/
+
+# Local env / checkout
+.env
+**/.env
+
+# Website, CAD, internal briefs — not this firmware repo
+.cursor/
+.vscode/
+site/
+3D files/
+docs/TAWNI.md
+docs/HANDOVER.md
+docs/FACES.md
+docs/CHECKOUT.md
+docs/HARDWARE_HANDOVER.md
+docs/PRODUCT.md
+docs/SNAPSHOTS.md
+docs/VERSIONS.md
+docs/images/
+docs/tawni logo/
+_archive_multidev/
+_restore_single/
+
+# PlatformIO build output (ship .bin via GitHub Releases, not git)
+.pio/
+*.bin
+*.elf
+*.map
+*.hex
+
+docs/FIRMWARES.md
