@@ -1,6 +1,6 @@
 # Tawni — Victron Instant Readout
 
-Cabin gauge for Victron kit. Same Tawni box, this firmware face.
+Cabin gauge for Victron kit. Same Tawni box, this firmware.
 
 **Hardware:** [LILYGO T-Display C5](https://www.lilygo.cc/products/t-display-c5) (ESP32-C5, 1.9″ 320×170).  
 **Product:** [tawni.io](https://tawni.io)
@@ -11,7 +11,7 @@ Current version: **v0.3.8** — [changelog](CHANGELOG.md) · [releases](https://
 
 ---
 
-## What this face does
+## What this Firmware does
 
 Reads Victron **Instant Readout** over Bluetooth (no pairing). Up to **8** saved devices.
 
@@ -75,11 +75,11 @@ Saved devices stay after an update. Stay powered during upload.
 
 ---
 
-## Setup (this face)
+## Setup (this Firmware)
 
 First boot with no devices: hotspot is already on. Cabin shows **SETUP MODE**.
 
-This face’s hotspot is **VictronDash**. Other Tawni faces use their own SSID so two boxes on the bench do not collide.
+This firmware's hotspot is **VictronDash**. Other Tawni firmwares use their own SSID so two boxes on the bench do not collide.
 
 1. Join **VictronDash** (open network) → `http://192.168.4.1`
 2. In VictronConnect: enable Instant Readout, copy **MAC** and **encryption key**

@@ -156,7 +156,7 @@ Products can have Bluetooth for VictronConnect **without** Instant Readout. If V
 
 ## References
 
-- [README.md](../README.md) — what this face ships  
+- [README.md](../README.md) — what this Firmware ships  
 - [INSTANT_READOUT.md](INSTANT_READOUT.md) — sniff / decrypt (+ VictronBLE firmware notes)  
 - [DASHBOARD.md](DASHBOARD.md) — UI  
 - [SETUP.md](SETUP.md) — devices & source of truth  
