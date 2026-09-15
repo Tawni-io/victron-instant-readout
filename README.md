@@ -23,8 +23,6 @@
   </p>
 </div>
 
----
-
 ## 📖 About The Project
 
 <div align="center">
