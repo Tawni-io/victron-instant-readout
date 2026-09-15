@@ -25,6 +25,16 @@
 
 ---
 
+## Table of Contents
+
+- [About The Project](#-about-the-project)
+- [Getting Started](#-getting-started)
+- [Usage](#-usage)
+- [Roadmap](#️-roadmap)
+- [License](#-license)
+
+---
+
 <div align="center">
   <img src="docs/images/about.jpg" alt="Tawni cabin running Victron Instant Readout" width="250">
 </div>
