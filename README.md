@@ -1,4 +1,3 @@
-<a id="top"></a>
 <div align="center">
   <img src="docs/images/tawni-logo.png" alt="Tawni" width="140">
 
@@ -26,22 +25,6 @@
 
 ---
 
-<details>
-  <summary><strong>Table of Contents</strong></summary>
-
-- [About The Project](#about-the-project)
-  - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Install & update](#install--update)
-  - [Setup](#setup)
-- [Usage](#usage)
-- [Roadmap](#roadmap)
-- [License](#license)
-
-</details>
-
----
-
 ## 📖 About The Project
 
 <div align="center">
@@ -63,8 +46,6 @@ Settings live on your phone, not in a cabin menu.
 
 Tawni is **not affiliated with, endorsed by, or sponsored by Victron Energy B.V.** Victron, VictronConnect, and Instant Readout are trademarks of Victron Energy.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ### Built With
 
 Runs on both Tawni hardware SKUs:
@@ -73,8 +54,6 @@ Runs on both Tawni hardware SKUs:
 - **Rufous** — Tawni core + GPS + external antenna (GPS unused by this firmware)
 
 Board: [LILYGO T-Display C5](https://www.lilygo.cc/products/t-display-c5) (ESP32-C5, 1.9″ 320×170)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ---
 
@@ -137,8 +116,6 @@ Keys live in on-device storage. Do not put real keys in source files.
 
 More help: [docs/SETUP.md](docs/SETUP.md) · [docs/VICTRONCONNECT_REF.md](docs/VICTRONCONNECT_REF.md) · [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ---
 
 ## 🧭 Usage
@@ -155,16 +132,12 @@ Two buttons. The enclosure marks the **setup** button (bottom). Flip Display 180
 
 Swipe left/right does the same as next/previous if the touch screen is fitted.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ---
 
 ## 🗺️ Roadmap
 
 - SoftAP OTA PIN / auth before wide promo
 - More Instant Readout kit coverage as Victron ships it — see [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ---
 
@@ -200,5 +173,3 @@ Touch-IC gold test: `pio run -e bringup_touch -t upload`
 Vendored drivers keep their own licenses: [`lib/esp_lcd_st7789`](lib/esp_lcd_st7789) (LilyGO / João Brilha), [`lib/CST816S`](lib/CST816S) (Felix Biego).
 
 <!-- /website:omit -->
-
-<p align="right">(<a href="#top">back to top</a>)</p>
