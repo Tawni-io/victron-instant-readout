@@ -1,19 +1,56 @@
-# Tawni — Victron Instant Readout
+<a id="top"></a>
+<div align="center">
+  <img src="docs/images/tawni-logo.png" alt="Tawni" width="140">
 
-Cabin gauge for Victron kit. Same Tawni box, this firmware.
+  <h1>Victron Instant Readout</h1>
 
-**Hardware:** [LILYGO T-Display C5](https://www.lilygo.cc/products/t-display-c5) (ESP32-C5, 1.9″ 320×170).  
-**Product:** [tawni.io](https://tawni.io)
+  <p>
+    Cabin gauge for Victron kit — Instant Readout over Bluetooth, no pairing.<br>
+    Same Tawni box, this firmware.
+  </p>
 
-Tawni is **not affiliated with, endorsed by, or sponsored by Victron Energy B.V.** Victron, VictronConnect, and Instant Readout are trademarks of Victron Energy.
+  <p>
+    <a href="https://github.com/Tawni-io/victron-instant-readout/releases"><strong>Releases</strong></a>
+    ·
+    <a href="https://tawni.io/victron.html"><strong>Product page</strong></a>
+    ·
+    <a href="https://tawni.io"><strong>tawni.io</strong></a>
+  </p>
 
-Current version: **v0.3.8** — [changelog](CHANGELOG.md) · [releases](https://github.com/Tawni-io/victron-instant-readout/releases)
+  <p>
+    Current version: <strong>v0.3.8</strong>
+    ·
+    <a href="CHANGELOG.md">Changelog</a>
+  </p>
+</div>
 
 ---
 
-## What this firmware does
+<details>
+  <summary><strong>Table of Contents</strong></summary>
 
-Reads Victron **Instant Readout** over Bluetooth (no pairing). Up to **8** saved devices.
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Install & update](#install--update)
+  - [Setup](#setup)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [License](#license)
+
+</details>
+
+---
+
+## 📖 About The Project
+
+<div align="center">
+  <img src="docs/images/about.jpg" alt="Tawni cabin running Victron Instant Readout" width="320">
+</div>
+
+<br>
+
+Reads Victron **Instant Readout** advertisements over Bluetooth (no pairing). Save up to **8** devices and flip through cabin pages with the two buttons — or a swipe if the touch screen is fitted.
 
 | Page | Kit | Shows |
 | --- | --- | --- |
@@ -24,36 +61,39 @@ Reads Victron **Instant Readout** over Bluetooth (no pairing). Up to **8** saved
 
 Settings live on your phone, not in a cabin menu.
 
+Tawni is **not affiliated with, endorsed by, or sponsored by Victron Energy B.V.** Victron, VictronConnect, and Instant Readout are trademarks of Victron Energy.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+### Built With
+
+Runs on both Tawni hardware SKUs:
+
+- **Tawni** — original / smallest pocket box
+- **Rufous** — Tawni core + GPS + external antenna (GPS unused by this firmware)
+
+Board: [LILYGO T-Display C5](https://www.lilygo.cc/products/t-display-c5) (ESP32-C5, 1.9″ 320×170)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ---
 
-## Buttons
+## 🚀 Getting Started
 
-Two buttons. The enclosure marks the **setup** button (bottom). Flip Display 180 does not swap them.
+Buyers: flash from [tawni.io](https://tawni.io) or a GitHub Release `.bin`. No PlatformIO required.
 
-| Input | Action |
-| --- | --- |
-| Bottom short | Next page |
-| Top short | Previous page |
-| Bottom long (~2 s) | Setup hotspot on/off |
-| Both held (~3 s) | Soft power-off (deep sleep) |
-| Bottom after wake (~1.5 s) | Stay on |
+### Install & update
 
-Swipe left/right does the same as next/previous if the touch screen is fitted.
+#### Phone — later updates
 
----
-
-## Install & update
-
-### Phone — later updates
-
-1. Download `victron-instant-readout-t-display-c5-vX.Y.Z.bin` from [Releases](https://github.com/Tawni-io/victron-instant-readout/releases) (or use the flasher on [tawni.io](https://tawni.io) when available)
-2. Long-press the marked setup button
+1. Download `victron-instant-readout-t-display-c5-vX.Y.Z.bin` from [Releases](https://github.com/Tawni-io/victron-instant-readout/releases) (or use the flasher on [tawni.io](https://tawni.io))
+2. Long-press the marked **setup** button (bottom)
 3. Join Wi-Fi **VictronDash** → open `http://192.168.4.1`
 4. **Firmware** → upload the `.bin` → wait for reboot
 
 Saved devices stay after an update. Keep the unit powered during upload.
 
-### USB — first flash or recovery
+#### USB — first flash or recovery
 
 Use a USB-C cable and the flasher on [tawni.io](https://tawni.io), or flash a Release `.bin` with your usual ESP32 tool. If the cabin does not boot after a bad upload, recover over USB, then re-add devices in setup if needed.
 
@@ -81,9 +121,7 @@ pio run -e bringup_ble -t upload
 
 <!-- /website:omit -->
 
----
-
-## Setup
+### Setup
 
 First boot with no devices: the hotspot is already on. The cabin shows **SETUP MODE**.
 
@@ -99,9 +137,38 @@ Keys live in on-device storage. Do not put real keys in source files.
 
 More help: [docs/SETUP.md](docs/SETUP.md) · [docs/VICTRONCONNECT_REF.md](docs/VICTRONCONNECT_REF.md) · [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md)
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ---
 
-## License
+## 🧭 Usage
+
+Two buttons. The enclosure marks the **setup** button (bottom). Flip Display 180 does not swap them.
+
+| Input | Action |
+| --- | --- |
+| Bottom short | Next page |
+| Top short | Previous page |
+| Bottom long (~2 s) | Setup hotspot on/off (**VictronDash**) |
+| Both held (~3 s) | Soft power-off (deep sleep) |
+| Bottom after wake (~1.5 s) | Stay on |
+
+Swipe left/right does the same as next/previous if the touch screen is fitted.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+---
+
+## 🗺️ Roadmap
+
+- SoftAP OTA PIN / auth before wide promo
+- More Instant Readout kit coverage as Victron ships it — see [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+---
+
+## 📄 License
 
 Firmware: [MIT](LICENSE). Tawni is not affiliated with Victron Energy B.V.
 
@@ -133,3 +200,5 @@ Touch-IC gold test: `pio run -e bringup_touch -t upload`
 Vendored drivers keep their own licenses: [`lib/esp_lcd_st7789`](lib/esp_lcd_st7789) (LilyGO / João Brilha), [`lib/CST816S`](lib/CST816S) (Felix Biego).
 
 <!-- /website:omit -->
+
+<p align="right">(<a href="#top">back to top</a>)</p>

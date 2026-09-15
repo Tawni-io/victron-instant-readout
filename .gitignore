@@ -21,7 +21,10 @@ docs/HARDWARE_HANDOVER.md
 docs/PRODUCT.md
 docs/SNAPSHOTS.md
 docs/VERSIONS.md
-docs/images/
+# Local photo dumps stay private; README assets below are tracked.
+docs/images/*
+!docs/images/tawni-logo.png
+!docs/images/about.jpg
 docs/tawni logo/
 _archive_multidev/
 _restore_single/
