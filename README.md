@@ -26,7 +26,7 @@
 <br>
 
 <div align="center">
-  <img src="docs/images/about.jpg" alt="Tawni cabin running Victron Instant Readout" width="220">
+  <img src="docs/images/about.jpg" alt="Tawni cabin running Victron Instant Readout" width="250">
 </div>
 
 ## 📖 About The Project
