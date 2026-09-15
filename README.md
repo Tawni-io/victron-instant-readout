@@ -1,7 +1,7 @@
 <div align="center">
   <img src="docs/images/tawni-logo.png" alt="Tawni" width="140">
 
-  <h1>Victron Instant Readout</h1>
+  <p><strong>Victron Instant Readout</strong></p>
 
   <p>
     Cabin gauge for Victron kit — Instant Readout over Bluetooth, no pairing.<br>
