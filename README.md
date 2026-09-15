@@ -23,11 +23,11 @@
   </p>
 </div>
 
-## 📖 About The Project
-
 <div align="center">
   <img src="docs/images/about.jpg" alt="Tawni cabin running Victron Instant Readout" width="320">
 </div>
+
+## 📖 About The Project
 
 <br>
 
